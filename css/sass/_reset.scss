@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: $font-size--base;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+}
+
+body{
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $color-text-dark;
+    background-color:$color-bg-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $fonmt-family-heading;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+}
+h1{
+    font-size: $font-size-xxl;
+}
+h2{
+    font-size: $font-size-xl;
+}
+h3{
+    font-size: $font-size-lg;
+}
+
+p{
+    margin-bottom: $space-md;
+
+    &:last-child{
+        margin-bottom:0;
+    }
+}
+
+a{
+    color: $color-accent;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover{
+        color: darken($color-accent,10%);
+    }
+}
+
+img{ 
+    max-width:100%;
+    height:auto;
+    display: block;
+}
+
+button{
+    font-family: inherit;
+    font-size: inherit;
+    border:none;
+    cursor:pointer;
+    background:none;
+    padding:0;
+    @include transition(all);
+}
+
+input, textarea, select{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+details{
+    cursor:pointer;
+}
+summary{
+    list-style:none;
+
+    &::-webkit-details-marker{
+        display:none;
+    }
+}
