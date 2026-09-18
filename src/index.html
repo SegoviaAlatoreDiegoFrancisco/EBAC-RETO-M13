@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos Fitness - Nueva Linea de Productos</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+<header class="header">
+    <div class="header__container">
+        <h1 class="header__title">Equipos Fitness</h1>
+        <p class="header__subtitle">Descubre nuestra nueva Linea de Productos</p>
+    </div>
+</header>
+
+
+<main class="main">
+    <section class="products">
+        <div class="product__container">
+            <!--  INICIO   Espacio para colocar los productos-->
+            
+            <div class="product-card">
+                <details class="product-card__details">
+                    <summary class="product-card__header">
+                        <img src="./assets/img/5001.png" 
+                             alt="Squat Rack" 
+                             class="product-card__image">
+                        <div class="product-card__body">
+                            <h2 class="product-card__title">Squat Rack</h2>
+                            <p class="product-card__description">
+                                Estructura abierta y robusta de acero diseñada para soportar entrenamientos de fuerza pesados con barra libre. Incluye ganchos de seguridad ajustables (J-hooks) y soportes de seguridad laterales para realizar sentadillas y otros ejercicios compuestos con total confianza.
+                            </p>
+                            <div class="product-card__footer">
+                                <spam class="product-card__price">$27,000.00</spam>
+                                <span class="product-card__badge product-card__badge--new">Nuevo</span>
+                                
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="modal modal--product" role="dialog">
+                        <div class="modal__overlay"></div>
+                        <div class="modal__content">
+                            <div class="modal__header">
+                                <h2 class="modal__title">Squat Rack</h2>
+                            </div>
+                            <div class="modal__body">
+                                <img 
+                                    src="./assets/img/5001.png" 
+                                    alt="Squat Rack" 
+                                    class="modal__image"
+                                >
+                                <p class="modal__description">Estructura abierta y robusta de acero diseñada para soportar entrenamientos de fuerza pesados con barra libre. Incluye ganchos de seguridad ajustables (J-hooks) y soportes de seguridad laterales para realizar sentadillas y otros ejercicios compuestos con total confianza.
+                                </p>
+                                <div class="modal__specs">
+                                    <h3 class="modal__specs-title">Especificaciones</h3>
+                                    <ul class="modal__specs-list">
+                                        <li><strong>Precio: </strong> $27,000.00</li>
+                                        <li><strong>Disponibilidad:</strong>En stock</li>
+                                        <li><strong>Condición:</strong>Nuevo</li>
+                                        <li><strong>ID Producto: </strong>5001</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal__footer">
+                                <button class="modal__btn modal__btn--primary">Comprar ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            
+            <!-- FIN   Espacio para colocar los productos-->
+        </div>
+    </section>
+</main>
+</body>
+</html>
