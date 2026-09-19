@@ -1,0 +1,44 @@
+.container{
+    width:100%;
+    margin:0 auto;
+    padding: 0 $space-md;
+
+    @include respond-to('sm'){
+        max-width:540px;
+    }
+
+    @include respond-to('md'){
+        max-width:720px;
+    }
+
+    @include respond-to('lg'){
+        max-width: 960px;
+    } 
+    @include respond-to('xl'){
+        max-width: $container-max-width;;
+    }
+}
+
+.products{
+    padding:$space-xxxl $space-md;
+    background-color: $color-bg-light;
+
+    &__container{
+        @include grid(1, $space-lg);
+        max-width: $container-max-width;
+        margin: 0 auto;
+
+        @include respond-to('sm'){
+            grid-template-columns:repeat(2,1fr);
+        }
+
+        @include respond-to('lg'){
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        @include respond-to('xl'){
+            grid-template-columns:repeat(4,1fr);
+        }
+    }
+}
+

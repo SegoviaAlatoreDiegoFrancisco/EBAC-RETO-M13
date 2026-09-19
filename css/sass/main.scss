@@ -1,11 +1,9 @@
-@import 'sass/_variables.scss';
-@import 'sass/_mixins.scss';
-@import 'reset';
-@import 'utilities';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'base/reset';
 
+@import 'components/product-card';
+@import 'components/modal';
 
-@import 'components';
-@import 'prodcut-card';
-@import 'modal';
-
-@import 'layout';
+@import 'layout/layout';
+@import 'layout/grid'

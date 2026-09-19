@@ -1,0 +1,49 @@
+
+.header {
+  background: linear-gradient(135deg, $color-primary 0%, darken($color-primary, 10%) 100%);
+  color: $color-text-white;
+  padding: $space-xxxl $space-md;
+  text-align: center;
+
+  &__container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: $font-size-xxl;
+    margin-bottom: $space-md;
+
+    @include respond-to('md') {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    font-size: $font-size-lg;
+    opacity: 0.9;
+    margin: 0;
+  }
+}
+
+.main {
+  min-height: calc(100vh - 200px);
+}
+
+.footer {
+  background-color: $color-bg-dark;
+  color: $color-text-white;
+  padding: $space-xxl $space-md;
+  text-align: center;
+  margin-top: $space-xxxl;
+
+  &__container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 0;
+    opacity: 0.8;
+  }
+}

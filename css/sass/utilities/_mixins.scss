@@ -15,7 +15,7 @@
 
 @mixin flex-center{
     display: flex;
-    align-item:center;
+    align-items:center;
     justify-content: center;
 }
 
@@ -35,7 +35,7 @@
 
 @mixin grid($columns:1, $gap: $space-md){
     display: grid;
-    grid-template-columns: repeat($colons, 1fr);
+    grid-template-columns: repeat($columns, 1fr);
     gap:$gap;
 }
 
@@ -55,7 +55,7 @@
 
 //Transición
 @mixin transition($properties...){
-    $transition:();
+    $transitions:();
     @each $property in $properties{
         $transitions: append($transitions,$property $transition-base, comma);
     }
@@ -87,8 +87,8 @@
     transform: translate(-50%,-50%);
 }
 //scrollbar
-@mixin custom-scrollbar($width:8px, $track-color: $color-gb-licht, $thumb-color: $color-border){
-    &::-webkit-scrollar{
+@mixin custom-scrollbar($width:8px, $track-color: $color-bg-light, $thumb-color: $color-border){
+    &::-webkit-scrollbar{
         width:$width;
     }
     
@@ -96,8 +96,8 @@
         background: $track-color;
     }
 
-    &::-webkit-scrollbar-tumb{
-        background: $tumb-color;
+    &::-webkit-scrollbar-thumb{
+        background: $thumb-color;
         border-radius: $border-radius-sm;
         &:hover{
             background: darken($thumb-color, 10%);
